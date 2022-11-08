@@ -169,3 +169,82 @@
 // let after = test.copyWithin(2, 0, 2);
 // console.log(test);
 // console.log(after);
+
+// let test = ["change", "after", 123, 21];
+// let a = test.indexOf(21);
+// console.log(a);
+// let b = test.indexOf("others");
+// console.log(b); // -1 没有找到存-1
+
+// let test = ["tibet", "go", "going", "other"];
+// let a = test.slice(1, 2);
+// let b = test.slice(test.length - 1);
+// console.log(a);
+// console.log(b);
+
+// let str = "after";
+// // let b = Array.of(str);
+// let c = str.split("");
+// // console.log(b);
+// console.log(c);
+// console.log(c.slice(c.length - 1));
+
+// let arr = ["test", "other"];
+// console.log(arr.includes("test")); // true
+
+// let arr = [1, 231, 232, 123];
+// arr.reverse();
+// console.log(arr);
+
+// arr.sort();
+// console.log(arr);
+
+// let arr = ["chagne", "other", "age", "more"];
+// // console.log(arr.keys());
+// for (const key of arr.keys()) {
+//   console.log(key);
+// }
+// for (const value of arr.values()) {
+//   console.log(value);
+// }
+// for (const [item, index] of arr.entries()) {
+//   console.log(item, index);
+// }
+
+// let a = [
+//   {
+//     name: "lihua",
+//     age: 23,
+//   },
+//   {
+//     name: "lilan",
+//     age: 12,
+//   },
+//   {
+//     name: "lihua",
+//     age: 34,
+//   },
+// ];
+// let copy = a.every((item, index) => {
+//   //   console.log(item, index);
+//   return item.age >= 23;
+// });
+// console.log(copy);
+
+// let copy = a.some((item) => item.age >= 23);
+// console.log(copy); // true
+
+// let copy = a.filter((item) => item.age <= 23);
+// console.log(copy);
+
+// let copy = a.map((item) => (item.other = "change"));
+// console.log(a, copy);
+
+// let copy = a.reduce((pre, cur, index, arr) => {
+//   console.log(pre, cur, index, arr);
+// });
+
+// let num = [1, 1, 1, 1, 12121, 3423];
+// num.reduce((item, index) => {
+//   console.log(item, index);
+// }, 0);
